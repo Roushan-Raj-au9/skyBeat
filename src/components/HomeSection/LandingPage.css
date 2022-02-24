@@ -1,0 +1,178 @@
+.leftSide , .rightSide{
+    height: 100vh;
+    width: 100%;
+}
+@media screen and (min-width : 768px)
+{
+    .leftSide , .rightSide{
+        height: 100vh;
+    }
+    .logoImage{
+        margin-top: 20%;
+        object-fit: contain;
+    }
+}
+.leftSide{
+    background-color: black;
+}
+.rightSide{
+	background-color: blue;
+}
+.logoC{
+    display : grid;
+	place-items: center;
+}
+.logoWrapper{
+    height: 500px;
+	/* width: 450px; */
+	width: 500px;
+}
+
+@media screen and (max-width : 768px)
+{
+	.logoWrapper{
+		height: 500px;
+		width: 300px;
+	}
+
+	.heading{
+	margin-left: 35px;
+    padding: 34px;
+    width: 80%;
+    height: 60%;
+    margin-top: 16%;
+    color: white;
+    justify-content: center;
+	border: 10px solid white; 
+	}
+}
+
+.logoWrapper .logoImage {
+    object-fit: contain;
+    margin-top: 20%;
+    height: 500px;
+    width: 500px;
+    position: relative;
+    display: block;
+    border-radius: 7px;
+    overflow: hidden;
+    box-shadow: 0 15px 35px #3d2173a1;
+    transition: all ease 0.4s;
+}
+.logoWrapper .logoImage:hover {
+    transform: scale(0.98) translateY(5px);
+}
+.rightContainer{
+	z-index: 1;
+	position: absolute;
+	width: 100%;
+	margin-top: 7%;
+}
+.heading{
+	margin-left: 70px;
+    padding: 34px;
+    width: 80%;
+    height: 60%;
+    margin-top: 16%;
+    color: white;
+    justify-content: center;
+	border: 10px solid white;
+}
+
+.heading h3{
+    line-height: 1.5;
+    font-size: xx-large;
+    padding: 20px;
+    font-weight: 800;
+}
+#loginBox:hover{
+	cursor: pointer;
+	text-decoration: none;
+	background-color:  rgba(255, 255, 255, 0.2);
+	color: white;
+}
+
+#loginBox{
+	color: black;
+	background-color: white;
+	border-radius: 50px;
+	padding: 10px;
+	margin-left: 20px;
+    margin-top: 30px;
+    border-radius: 41px;
+    text-align: center;
+    font-family: 'Baloo Bhai 2', cursive;
+    font-size: 15px;
+}
+
+.animation-area {
+    background-color: blue;
+	width: 100%;
+	height: 0vh;
+}
+.box-area {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+.box-area li {
+    position: absolute;
+	display: block;
+	list-style: none;
+	width: 25px;
+	height: 25px;
+    background: rgba(255, 255, 255, 0.2);
+	animation: animate 20s linear infinite;
+	bottom: -150px;
+}
+.box-area li:nth-child(1) {
+    left: 86%;
+	width: 80px;
+	height: 80px;
+	animation-delay: 0s;
+}
+.box-area li:nth-child(2) {
+	left: 12%;
+	width: 30px;
+	height: 30px;
+	animation-delay: 1.5s;
+	animation-duration: 10s;
+}
+.box-area li:nth-child(3) {
+	left: 70%;
+	width: 100px;
+	height: 100px;
+	animation-delay: 5.5s;
+}
+.box-area li:nth-child(4) {
+	left: 42%;
+	width: 150px;
+	height: 150px;
+	animation-delay: 0s;
+	animation-duration: 15s;
+}
+.box-area li:nth-child(5) {
+	left: 65%;
+	width: 40px;
+	height: 40px;
+	animation-delay: 0s;
+}
+.box-area li:nth-child(6) {
+	left: 15%;
+	width: 110px;
+	height: 110px;
+	animation-delay: 3.5s;
+}
+@keyframes animate {
+	0% {
+        transform: translateY(0) rotate(0deg);
+		opacity: 5;
+	}
+	100% {
+		transform: translateY(-800px) rotate(360deg);
+		opacity: 0;
+	}
+}

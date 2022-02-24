@@ -1,0 +1,26 @@
+.navbar-brand{
+    font-family: 'Baloo Bhai 2', cursive;
+    font-size: large;
+   
+}
+
+.bg-dark{
+    background-color: #04204e !important;
+}
+
+
+#logout{
+    color: black;
+    background-color:  #f7f7f7;
+    border-radius: 7px;
+    text-align: center;
+    font-family: 'Baloo Bhai 2', cursive;
+    font-size: 15px;
+}
+
+#logout:hover{
+    color: white;
+    background-color: #3f51b5;
+    cursor: pointer;
+    
+}

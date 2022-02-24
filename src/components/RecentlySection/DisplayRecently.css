@@ -1,0 +1,52 @@
+.recently-heading{
+    margin-left: 10px;
+    margin-top: 5px;
+    color: #192f60;
+    font-size:25px;
+    line-height: 1.5;
+    font-weight: bold;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    border-bottom: 4px solid #e6e6e6 ;
+
+}
+
+.recently-container{
+    display: flex;
+    flex-wrap: wrap;
+    cursor: pointer;
+}
+
+
+.recently {
+    height: 220px;
+    width: 220px;
+    margin: 25px 10px;
+    margin-bottom: 40px; 
+}
+
+
+.recently .recently-image {
+    height: 220px;
+    width: 220px;
+    position: relative;
+    display: block;
+    border-radius: 7px;
+    overflow: hidden;
+    box-shadow: 0 15px 35px #3d2173a1;
+    transition: all ease 0.4s;
+
+}
+
+
+.recently .recently-image:hover{
+    box-shadow: none;
+    transform: scale(0.98) translateY(5px);
+}
+
+.recently-name {
+    font-weight: 700;
+    margin-top: 15px;
+    font-family: Open sans;
+    text-align: center;
+}
+
